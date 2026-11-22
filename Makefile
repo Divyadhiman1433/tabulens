@@ -1,4 +1,4 @@
-.PHONY: install sample test lint run
+.PHONY: install sample test lint run artifacts
 
 install:
 	python -m pip install -e ".[dev]"
@@ -13,4 +13,9 @@ lint:
 	ruff check .
 
 run:
-	streamlit run app.py
+	streamlit run streamlit_app.py
+
+artifacts:
+	python scripts/run_analysis.py
+	python scripts/build_report.py
+	python scripts/build_presentation.py

@@ -20,6 +20,11 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=8,<9", "ruff>=0.8,<1"]
+artifacts = [
+  "matplotlib>=3.9,<4",
+  "python-pptx>=1,<2",
+  "reportlab>=4.2,<5",
+]
 
 [tool.setuptools]
 package-dir = {"" = "src"}

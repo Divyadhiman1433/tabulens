@@ -50,6 +50,13 @@ streamlit run streamlit_app.py
 
 Open `http://localhost:8501`.
 
+To rebuild the result bundle, report, and editable presentation:
+
+```bash
+python -m pip install -e ".[dev,artifacts]"
+make artifacts
+```
+
 ## Project structure
 
 ```text
