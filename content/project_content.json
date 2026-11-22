@@ -1,0 +1,35 @@
+{
+  "project": {
+    "name": "TabuLens",
+    "title": "Dataset Readiness and Anomaly Screening with Python",
+    "author": "Divya Dhiman",
+    "enrollment": "00702102026",
+    "programme": "MTech CS-AI | 1st Sem",
+    "institution": "Indira Gandhi Delhi Technical University for Women",
+    "submitted_to": "Prof. Seeja",
+    "subject": "AI Programming Tools (AIPT)"
+  },
+  "aim": "To build a simple Python application that reads tabular data, identifies common quality problems, creates an explainable cleaned copy, visualizes the dataset, and suggests unusual numeric records for review.",
+  "problem": "Small tabular datasets often reach analysis with missing values, duplicate rows, inconsistent types, or unusual records. Beginners may train a model before noticing these problems. TabuLens places a transparent readiness check before later analysis.",
+  "workflow": [
+    "Read a CSV file into a Pandas DataFrame.",
+    "Profile rows, columns, types, missing values, duplicates, and constant columns.",
+    "Create a cleaned copy using duplicate removal, median filling, and mode filling.",
+    "Visualize quality issues and numeric relationships.",
+    "Use Isolation Forest to suggest unusual numeric records for human review.",
+    "Export the cleaned DataFrame as a new CSV file."
+  ],
+  "learning": [
+    "Python functions, modules, packages, file paths, and file handling.",
+    "Object-oriented programming through the DatasetAnalyzer class.",
+    "Pandas and NumPy for tabular operations.",
+    "Plotly and Streamlit for interactive visualization.",
+    "Scikit-learn for preprocessing and Isolation Forest anomaly screening."
+  ],
+  "limitations": [
+    "The readiness score is a transparent heuristic rather than a universal data-quality standard.",
+    "Anomaly flags indicate unusual numeric patterns, not incorrect records.",
+    "CSV parsing still depends on the encoding and delimiter supplied by the user.",
+    "Subject knowledge is required before changing or removing real observations."
+  ]
+}
